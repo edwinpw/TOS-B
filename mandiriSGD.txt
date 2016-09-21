@@ -1,0 +1,5 @@
+#!/bin/bash
+beliSGD=`curl -s  http://www.bankmandiri.co.id | grep SGD -A2 | cut -d">" -f2 | cut -d"<" -f1 |xargs |cut -d" " -f2`
+jualSGD=`curl -s  http://www.bankmandiri.co.id | grep SGD -A2 | cut -d">" -f2 | cut -d"<" -f1 |xargs |cut -d" " -f3`
+
+echo "`date` | "beliSGD" | "jualSGD
